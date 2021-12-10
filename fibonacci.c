@@ -31,23 +31,23 @@ int main(int argc, char **argv){
       {
           for(int i = 0; i<=n;i++)
           {
-              result = fibonacci(n);
+              resultado = fibonacci(n);
               
-              result= fibonacci(i);
-              printf("fibonacci de (%d) %d =",i,result);
+              resultado= fibonacci(i);
+              printf("fibonacci de (%d) %d =",i,resultado);
               if(result<5)
               {
-                  printf("%d\n",result); 
+                  printf("%d\n",resultado); 
 
               }else
               {
-                  while (result != 1)
+                  while (resultado != 1)
                   {
-                      if(result%valor==0)
+                      if(resultado%valor==0)
                       {
                           printf("%d",valor);
-                          result=result/valor;
-                          if (result != 1)
+                          resultado=resultado/valor;
+                          if (resultado != 1)
                           {
                               printf("X");
                           }
@@ -63,9 +63,9 @@ int main(int argc, char **argv){
                   printf("\n");
                   
               }
-              factoredFibonacci(result);
+              factoredFibonacci(resultado);
 
-              newResult= factoredFibonacci(result);
+              newResult= factoredFibonacci(resultado);
               printf("FIB(%d) = %ld\n", i,newResult);
           }
           
@@ -73,7 +73,7 @@ int main(int argc, char **argv){
 
       
    }
-   printf("Result is %d\n", result);
+   printf("Result is %d\n", resultado);
 }
 
 
